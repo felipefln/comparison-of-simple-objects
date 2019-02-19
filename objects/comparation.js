@@ -16,4 +16,10 @@ let equal = true;
 for (let key in car) {
     if(car[key] !== car1[key]) equal = false;
 }
-console.log(equal);
+
+for (let key in car1) {
+    if(car1[key] !== car[key]) equal = false;
+}
+console.log(equal); 
+console.log(car == car1); // comparation false
+console.log(car === car1) // comparation false
